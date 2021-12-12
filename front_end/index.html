@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Items JS -->
+    <script src="js/items.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-actions">
+                    <div class='icon icon-plus'>
+                            +
+                    </div>
+                </div>
+
+                <div class="card-title">
+                    <h1>
+                        Shopping list
+                    </h1>
+                </div>
+
+                <div class="card-search">
+                    <input type="text" class="form-control" id="searchForItem" placeholder="Search for item" aria-label="Search for item"
+                        aria-describedby="basic-addon1" />
+                </div>
+
+                <div class="card-new-item d-none">
+                    <form action="" id="newItemFrom">
+                        <div class="row">
+                            <div class="col-3 form-group">
+                                <input type="text" class="form-control w-100" name="title" placeholder="title">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <input type="text" class="form-control w-100" name="link" placeholder="link">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <input type="number" min="0" value="0"  class="form-control w-100" name="price" placeholder="price">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <button class="btn btn-primary w-100 btn-items-new" type="submit"> Add new item </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="row mx-0 w-100 edit-item d-none">
+                    <form action="" id="editItemFrom" class="w-100" data-item-id="">
+                        <div class="row">
+                            <div class="col-3 form-group">
+                                <input type="text" id="editItemTitle" class="form-control w-100" name="title" placeholder="title">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <input type="text" id="editItemLink" class="form-control w-100" name="link" placeholder="link">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <input type="number" id="editItemPrice" class="form-control w-100" name="price" placeholder="price">
+                            </div>
+
+                            <div class="col-3 form-group">
+                                <button class="btn btn-primary w-100 btn-items-edit" type="submit"> Edit item </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-items-wrapper">
+                    <div class="no-items list-item row align-items-center">
+                        <div class='col-2 icon icon-plus my-auto'>
+                            +
+                        </div>
+
+                        <div class="col-10 list-item-content">
+                            No items added to list
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

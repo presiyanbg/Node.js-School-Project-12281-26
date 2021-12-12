@@ -1,0 +1,225 @@
+
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after { box-sizing: inherit; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	font-family: "Brandon Grotesque", sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+    position: relative;
+}
+
+h1 {
+	font-family: "MrsAnt-Regular", serif;
+	font-size: 50px;
+	line-height: 1.3em;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 1em;
+	font-weight: 600;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 23px;
+	line-height: 1.3em;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+h5 {
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+h6 {
+	font-size: 10px;
+	line-height: 1.5em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input {
+	font-family: inherit;
+}
+
+select {
+	letter-spacing: inherit;
+	font-weight: inherit;
+	appearance: none;
+	background-color: transparent;
+	color: inherit;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	text-transform: uppercase;
+	cursor: inherit;
+ 	line-height: inherit;
+	outline: none;
+}
+
+
+/*=============================================
+=            Colors            =
+=============================================*/
+
+:root {
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --white: #fff;
+    --gray: #6c757d;
+    --light-gray: #dadbdb;
+    --gray-dark: #343a40;
+    --primary: #0d6efd;
+    --secondary: #c0c0c0;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+/*=====  End of Colors  ======*/
+
+
+
+/*=============================================
+=            Card            =
+=============================================*/
+
+.card {
+    margin: 5rem auto;
+    width: 60rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.card-actions {
+    flex: 0 0 10%;
+    margin: auto;
+}
+
+.card-title {
+    margin: auto;
+    flex: 0 0 89%;
+}
+
+.card-search {
+    flex: 0 0 80%;
+}
+
+.card-body {
+    padding: 1rem 0.5rem;
+}
+
+.card-new-item {
+    flex: 0 0 80%;
+    margin: 1rem auto;
+}
+
+/*=====  End of Card  ======*/
+
+
+/*=============================================
+=            List            =
+=============================================*/
+
+.list-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.no-items {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--light-gray);
+}
+
+.list-item {
+    padding: 0.5rem 1rem;
+    border:1px solid var(--light-gray);
+    border-radius: 1rem;
+    margin: 0.3rem 0;
+    transition: all 100ms ease-in-out;
+}
+
+.list-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.item-action {
+    cursor: pointer;
+}
+
+/*=====  End of List  ======*/
+
+
+/*=============================================
+=            Icons            =
+=============================================*/
+
+.icon-plus {
+    color: var(--success);
+    font-size: 3rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.icon-plus:hover {
+    transform: scale(1.5);
+}
+
+
+/*=====  End of Icons  ======*/
