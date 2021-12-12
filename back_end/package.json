@@ -4,7 +4,8 @@
   "description": "School Project - Node js / Typescript API",
   "main": "source/server.ts",
   "scripts": {
-    "build": "rm -rf build/ && prettier --write source/ && tsc"
+    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "start": "nodemon src/server.ts"
   },
   "author": "Presiyan Tsonevski",
   "license": "ISC",
